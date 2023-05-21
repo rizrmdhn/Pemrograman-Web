@@ -1,8 +1,5 @@
 <?php
 
-/**
- * Menghapus todo di list
- */
 function removeTodoList(int $number): bool
 {
     global $todoList;
