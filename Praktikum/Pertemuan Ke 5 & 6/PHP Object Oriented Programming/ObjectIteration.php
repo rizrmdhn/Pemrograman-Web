@@ -7,17 +7,17 @@ class Data implements IteratorAggregate
     private string $third = "Third";
     protected string $forth = "Forth";
 
-//    public function getIterator()
-//    {
-//        $array = [
-//            "first" => $this->first,
-//            "second" => $this->second,
-//            "third" => $this->third,
-//            "forth" => $this->forth,
-//        ];
-//
-//        return new ArrayIterator($array);
-//    }
+    //    public function getIterator()
+    //    {
+    //        $array = [
+    //            "first" => $this->first,
+    //            "second" => $this->second,
+    //            "third" => $this->third,
+    //            "forth" => $this->forth,
+    //        ];
+    //
+    //        return new ArrayIterator($array);
+    //    }
 
     public function getIterator()
     {
@@ -27,6 +27,7 @@ class Data implements IteratorAggregate
         yield "forth" => $this->forth;
     }
 }
+
 
 $data = new Data();
 

@@ -2,6 +2,11 @@
 
 namespace Data\Traits;
 
+
+/* Fungsi `SayGoodBye` mendefinisikan metode `goodBye` yang mengambil parameter string opsional `$name`.
+Jika `$name` nol, itu mengeprint "Good bye" ke konsol. Kalau tidak, itu mengeprint "Good bye" diikuti oleh
+nilai `$name`.Sifat ini dapat digunakan oleh kelas yang perlu menerapkan metode `Good bye`.*/
+
 trait SayGoodBye
 {
     public function goodBye(?string $name): void
@@ -26,6 +31,9 @@ trait SayHello
     }
 }
 
+
+/* Fungsi `HasName` mendefinisikan properti publik `$name` dari tipe string. Sifat ini dapat digunakan oleh
+kelas yang perlu memiliki properti nama.*/
 trait HasName
 {
     public string $name;
@@ -36,7 +44,8 @@ trait CanRun
     public abstract function run(): void;
 }
 
-class ParentPerson {
+class ParentPerson
+{
 
     public function goodBye(?string $name): void
     {
@@ -47,16 +56,13 @@ class ParentPerson {
     {
         echo "Hello in Person" . PHP_EOL;
     }
-
 }
 
-trait All {
-    use SayGoodBye, SayHello, HasName, CanRun {
-        // bisa di override
-        // hello as private;
-        // goodBye as private;
-    }
+trait All
+{
+    use SayGoodBye, SayHello, HasName, CanRun;
 }
+
 
 class Person extends ParentPerson
 {
@@ -66,5 +72,4 @@ class Person extends ParentPerson
     {
         echo "Person $this->name is running" . PHP_EOL;
     }
-
 }

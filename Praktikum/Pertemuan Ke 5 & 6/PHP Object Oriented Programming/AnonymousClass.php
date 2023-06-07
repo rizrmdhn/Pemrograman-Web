@@ -5,11 +5,13 @@ interface HelloWorld
     function sayHello(): void;
 }
 
-$helloWorld = new class("Eko") implements HelloWorld {
+$helloWorld = new class("Eko") implements HelloWorld
+{
 
     public string $name;
 
-    public function __construct(string $name){
+    public function __construct(string $name)
+    {
         $this->name = $name;
     }
 
@@ -18,4 +20,5 @@ $helloWorld = new class("Eko") implements HelloWorld {
         echo "Hello $this->name" . PHP_EOL;
     }
 };
+
 $helloWorld->sayHello();

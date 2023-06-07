@@ -6,7 +6,7 @@ class MathHelper
 {
     static public string $name = "MathHelper";
 
-    static public function sum(int...$numbers): int
+    static public function sum(int ...$numbers): int
     {
         $total = 0;
         foreach ($numbers as $number) {
@@ -15,3 +15,6 @@ class MathHelper
         return $total;
     }
 }
+
+$total = MathHelper::sum(1, 2, 3, 4, 5);
+echo "Total $total" . PHP_EOL;

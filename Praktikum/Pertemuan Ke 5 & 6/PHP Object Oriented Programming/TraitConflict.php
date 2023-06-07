@@ -1,5 +1,8 @@
 <?php
 
+/* Fungsi `A` mendefinisikan dua metode `doA()` dan `doA()` yang akan digunakan di kelas yang menggunakan
+sifat ini. Metode `doA()` akan mengeluarkan string "a" diikuti dengan baris baru, dan metode `doB()`
+akan mengeluarkan string "B" diikuti oleh baris baru.*/
 trait A
 {
     function doA(): void
@@ -13,6 +16,10 @@ trait A
     }
 }
 
+
+/* Fungsi `B` mendefinisikan dua metode `doA()` dan `doB()` yang akan digunakan di kelas yang menggunakan
+sifat ini. Metode `doA()` akan mengeluarkan string "a" diikuti oleh newline, dan metode `doB()` 
+akan mengeluarkan string "B" diikuti oleh garis baru.*/
 trait B
 {
     function doA(): void
@@ -26,7 +33,9 @@ trait B
     }
 }
 
-class Sample
+
+/* TraitConflict Class menggunakan fungsi A dan B, menyelesaikan konflik antara metode mereka dengan kata kunci insteadof.*/
+class TraitConflict
 {
     use A, B {
         A::doA insteadof B;
@@ -34,6 +43,6 @@ class Sample
     }
 }
 
-$sample = new Sample();
+$sample = new TraitConflict();
 $sample->doA();
 $sample->doB();
