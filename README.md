@@ -1,2 +1,2 @@
 # Pemrograman-Web
-Praktikum Pemrograman Web
+Praktikum dan Teori Pemrograman Web
