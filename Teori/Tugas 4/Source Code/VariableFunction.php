@@ -22,7 +22,8 @@ function sayHello(string $name, $filter)
     echo "Hello $finalName" . PHP_EOL;
 }
 
-function sampleFunction(string $name): string {
+function sampleFunction(string $name): string
+{
     return "Sample $name";
 }
 
