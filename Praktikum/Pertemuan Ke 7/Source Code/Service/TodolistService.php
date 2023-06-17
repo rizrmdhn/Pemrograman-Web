@@ -4,8 +4,9 @@
 `TodolistService` dan kelas `TodolistServiceImpl` 
 yang mengimplementasikan sebuah interface. interface mendefinisikan tiga metode: `showTodolist()`, `addTodolist(string)`, dan 
 `remove(int)`. Kelas mengimplementasikan sebuah interface. interface mendefinisikan tiga metode: `showTodolist()`, `addTodolist(string)`, dan `removeTodolist(int)`.
-Kelas `TodolistServiceImpl` memiliki konstruktor yang mengambil contoh `todolistrepository` sebagai sebuah Parameter dan mengimplementasikan metode yang didefinisikan dalam interface `Todolistservice`. Itu
-`showTodolist()` metode mengambil semua item dalam todolist dari repositori dan menampilkan mereka di konsol. Metode 
+Kelas `TodolistServiceImpl` memiliki konstruktor yang mengambil contoh `todolistrepository` 
+sebagai sebuah Parameter dan mengimplementasikan metode yang didefinisikan dalam interface `Todolistservice`. 
+Itu `showTodolist()` metode mengambil semua item dalam todolist dari repositori dan menampilkan mereka di konsol. Metode 
 `addtodolist(string)` membuat sebuah objek `todolist` baru dengan
 Diberikan todo dan menyimpannya ke repositori. Metode 
 `removetodolist (int)` menghapus sebuah item dengan nomor yang diberikan dari repositori.*/

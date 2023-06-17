@@ -1,7 +1,9 @@
 <?php
 
 /* Kode ini mendefinisikan sebuah namespace `Repository` dan menyatakan sebuah interface `TodolistRepository` dengan tiga
-Metode `save()`, `remove()`, dan `findAll()`. Itu juga mendefinisikan kelas `todolistrepositoryImpl` class tersebut mengimplementasikan antarmuka `todolistrepository` dan menyediakan implementasi untuk tiga metode. Kelas memiliki properti publik `$todolist` yang merupakan array dan digunakan untuk menyimpan daftar todo item.
+Metode `save()`, `remove()`, dan `findAll()`. Itu juga mendefinisikan kelas `todolistrepositoryImpl` 
+class tersebut mengimplementasikan antarmuka `todolistrepository` dan menyediakan implementasi untuk tiga metode. 
+Kelas memiliki properti publik `$todolist` yang merupakan array dan digunakan untuk menyimpan daftar todo item.
 Metode `save()` menambahkan item baru ke daftar TODO, metode 
 `remove()` menghapus item dari daftar TODO berdasarkan indeksnya, 
 dan metode `findAll()` mengembalikan semua item di todo
